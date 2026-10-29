@@ -1,0 +1,23 @@
+{
+  "name": "business-open-data-crypto",
+  "version": "1.0.0",
+  "description": "Government open-data search, Binance and Bitstamp tickers, Crypto Fear & Greed, Bitcoin stats, Bank of Canada FX and new startups. Hosted MCP server, bring your MCPize key.",
+  "mcpServers": {
+    "business-open-data-crypto": {
+      "httpUrl": "https://business-open-data-crypto.mcpize.run/mcp",
+      "headers": {
+        "Authorization": "Bearer ${MCPIZE_API_KEY}"
+      },
+      "timeout": 120000
+    }
+  },
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "MCPize API key",
+      "description": "Your key for Business Data: Open Data, Crypto & Startups. Subscribe on MCPize (Free plan available) and copy the key from the server page.",
+      "envVar": "MCPIZE_API_KEY",
+      "sensitive": true
+    }
+  ]
+}
